@@ -1,0 +1,56 @@
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgb(232, 238, 236) ;
+    padding: 8px 0 10px 8px;
+}
+
+img {
+    width: 100px;
+    height: 50px;
+}
+
+.listaOpcoes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    width: 400px;
+}
+
+.listaOpcoes li {
+    text-align: center;
+    padding-top: 17px ;
+    width: 150px;
+    height: 100%;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.underline-efect {
+    display: inline-block;
+    position: relative;
+    color: black;
+}
+
+.underline-efect:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline-efect:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+

@@ -1,0 +1,19 @@
+.login {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.log-button {
+    border: none;
+    background-color: rgba(139, 196, 183, 0.24);
+    padding: 7px 10px;
+    margin-top: 5px;
+    
+}
+
+.log-button span {
+    font-weight: 700;
+}
